@@ -1,0 +1,27 @@
+﻿/*sass eg..has to be compiled back to css used to create variables to reuse to factor out common styles*/
+$color: red;
+/*any ul inside of div then  style */
+div > ul{
+
+}
+ul{
+    color:$color;
+}
+/*nesting, style p and ul that are inside dive*/
+div{
+
+    p{
+
+    }
+    ul{
+
+    }
+}
+
+/*inheratance in sass*/
+%message {
+
+}
+.success {
+    @extends %message;
+}
